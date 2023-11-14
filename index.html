@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section class="card">
+      <div class="DoB-input">
+        <div class="dd-mm-yy">
+          <div class="lab">
+            <label id="label">DAY</label>
+          </div>
+          <input type="text" id="day" placeholder="DD" maxlength="2" />
+          <div>
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+        <div class="dd-mm-yy">
+          <div class="lab">
+            <label id="label">MONTH</label>
+          </div>
+          <input type="text" id="month" placeholder="MM" maxlength="2" />
+          <div>
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+        <div class="dd-mm-yy">
+          <div class="lab">
+            <label id="label">YEAR</label>
+          </div>
+          <input type="text" id="year" placeholder="YYYY" maxlength="4" />
+          <div>
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="btn">
+        <button id="btn">
+          <img src="assets/images/icon-arrow.svg" alt="Arrow" />
+        </button>
+      </div>
+      <div class="Output">
+        <h1><span id="output-year">--</span>years</h1>
+        <h1><span id="output-month">--</span>months</h1>
+        <h1><span id="output-day">--</span>days</h1>
+      </div>
+    </section>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Ayyappanakkala">Ayyappa Akkala</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

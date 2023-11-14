@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700;900&display=swap');
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+  background: var(--Off-white);
+}
+.card {
+  width: 45%;
+  height: 550px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-bottom-right-radius: 30%;
+  background: var(--White);
+}
+.DoB-input {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  padding: 50px;
+}
+.lab {
+  padding-bottom: 10px;
+}
+#label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Smokey-grey);
+  letter-spacing: 2px;
+}
+.dd-mm-yy input {
+  width: 78%;
+  height: 60px;
+  padding: 20px;
+  color: var(--Off-black);
+  font-size: 32px;
+  font-weight: 700;
+  border: 1px solid var(--Smokey-grey);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.error {
+  padding-top: 3px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--Light-red);
+  display: none;
+}
+.border {
+  width: 77%;
+  height: 2px;
+  background: var(--Light-grey);
+  margin-left: 6%;
+}
+.btn {
+  position: absolute;
+  right: 30%;
+  top: 42%;
+}
+#btn {
+  width: 80px;
+  height: 80px;
+  background: var(--Off-black);
+  border: none;
+  border-radius: 50%;
+  word-spacing: 5px;
+  cursor: pointer;
+}
+#btn:hover {
+  background: var(--Purple);
+}
+.Output {
+  margin: 40px;
+}
+#output-year,
+#output-month,
+#output-day {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--Purple);
+}
+.Output > h1 {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--Off-black);
+}
+/*Footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Media Queries */
+@media (max-width: 1440px) {
+  .DoB-input {
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  .dd-mm-yy input {
+    width: 70%;
+  }
+  .btn {
+    top: 34%;
+  }
+  .border {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+  .DoB-input {
+    gap: 10px;
+  }
+  .lab {
+    padding-bottom: 5px;
+  }
+  .error {
+    font-size: 8px;
+  }
+  .border {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .btn {
+    top: 29%;
+    right: 40%;
+  }
+  #btn {
+    width: 60px;
+    height: 60px;
+  }
+  .dd-mm-yy input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 8px;
+  }
+  #output-year,
+  #output-month,
+  #output-day {
+    font-size: 45px;
+  }
+  .Output > h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--Off-black);
+  }
+}
