@@ -18,7 +18,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
-You can see a live demo of this project [here](https://ayyappanakkala.github.io/Sign-up-form-with-success-message/).
+You can see a live demo of this project [here](https://ayyappanakkala.github.io/Age-Calculator/).
 
 ## The Challenge
 
@@ -57,8 +57,8 @@ The primary user stories for this project include:
 
 ### Links
 
-- Solution URL: (https://github.com/Ayyappanakkala/Age-Calculator.git)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Ayyappanakkala/Age-Calculator.git)
+- Live Site URL: [Website](https://ayyappanakkala.github.io/Age-Calculator/)
 
 ## My Process
 
